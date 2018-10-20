@@ -97,6 +97,7 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
       switch (this.sort.active) {
         case 'name': return compare(a.name, b.name, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
+        case 'amount': return compare(+a.amount, +b.amount, isAsc);
         default: return 0;
       }
     });

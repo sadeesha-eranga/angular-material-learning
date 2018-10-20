@@ -13,7 +13,7 @@ export class DataTableComponent implements OnInit {
   dataSource: DataTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'amount'];
+  displayedColumns = ['id', 'name', 'amount', 'action'];
 
   ngOnInit() {
     this.dataSource = new DataTableDataSource(this.paginator, this.sort);
